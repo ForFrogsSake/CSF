@@ -1,0 +1,14 @@
+Schema: csf
+
+Tables:
+
+USERS (user_id, fname, lname, email, username, password, user_type)
+
+ADMIN (user_id, type)
+	FK user_id references USERS nulls not allowed
+		Delete restrict, Update cascade
+
+CLIENT (user_id)
+
+FORM (form_id)
+

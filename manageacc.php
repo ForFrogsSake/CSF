@@ -1,6 +1,6 @@
 <?php 
     $host = 'localhost';
-	$user = 'root1';
+	$user = 'root';
 	$pass = '';
 	$dbname = 'csf';
     
@@ -77,18 +77,18 @@
                     echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Username</th><th>Status</th><th>Account Type</th><th>Action</th></tr>";
                     while($row=mysqli_fetch_assoc($result)){
                        echo "<tr>
-                            <td>".$row["id"]."</td>
-                            <td>"?> <div id="fname<?php echo $row["id"]; ?>"> <?php echo $row["fname"]?> <?php echo "</td>
-                            <td>"?> <div id="lname<?php echo $row["id"]; ?>"> <?php echo $row["lname"]?> <?php echo "</td>
-                            <td>"?> <div id="email<?php echo $row["id"]; ?>"> <?php echo $row["email"];?> <?php echo "</td>
-                            <td>"?> <div id="username<?php echo $row["id"];?>"> <?php echo $row["username"];?> <?php echo "</td>
-                            <td>"?> <div id="status<?php echo $row["id"];?>"> <?php echo $row["status"];?> <?php echo "</td>
-                            <td>"?> <div id="acctype<?php echo $row["id"];?>"> <?php echo $row["acctype"];?> <?php echo "</td>
+                            <td>".$row["user_id"]."</td>
+                            <td>"?> <div id="fname<?php echo $row["user_id"]; ?>"> <?php echo $row["fname"]?> <?php echo "</td>
+                            <td>"?> <div id="lname<?php echo $row["user_id"]; ?>"> <?php echo $row["lname"]?> <?php echo "</td>
+                            <td>"?> <div id="email<?php echo $row["user_id"]; ?>"> <?php echo $row["email"];?> <?php echo "</td>
+                            <td>"?> <div id="username<?php echo $row["user_id"];?>"> <?php echo $row["username"];?> <?php echo "</td>
+                            <td>"?> <div id="status<?php echo $row["user_id"];?>"> <?php echo $row["status"];?> <?php echo "</td>
+                            <td>"?> <div id="user_type<?php echo $row["user_id"];?>"> <?php echo $row["user_type"];?> <?php echo "</td>
                            
                             <td>"?> 
-                                <input type='button' class="edit_button" name="edit" id="edit_button<?php echo $row['id'];?>" value="edit" onclick="edit_row('<?php echo $row['id'];?>');">
-                                <input type='button' class="save_button" name="save" id="save_button<?php echo $row['id'];?>" value="save" onclick="save_row('<?php echo $row['id'];?>');"> 
-                                <input type='button' class="delete_button" name="del" id="delete_button<?php echo $row['id'];?>" value="delete" onclick="delete_row('<?php echo $row['id'];?>');"><?php echo "</td>";
+                                <input type='button' class="edit_button" name="edit" id="edit_button<?php echo $row['user_id'];?>" value="edit" onclick="edit_row('<?php echo $row['user_id'];?>');">
+                                <input type='button' class="save_button" name="save" id="save_button<?php echo $row['user_id'];?>" value="save" onclick="save_row('<?php echo $row['user_id'];?>');"> 
+                                <input type='button' class="delete_button" name="del" id="delete_button<?php echo $row['user_id'];?>" value="delete" onclick="delete_row('<?php echo $row['user_id'];?>');"><?php echo "</td>";
                            echo "</tr>";
                     }
                 

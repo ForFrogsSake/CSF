@@ -1,7 +1,7 @@
 <?php 
 
     $host = 'localhost';
-	$user = 'root1';
+	$user = 'root';
 	$pass = '';
 	$dbname = 'csf';
     

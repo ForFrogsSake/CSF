@@ -9,17 +9,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
   		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <link type="image/png" rel="icon" href="pictures/DOST LOGO.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
     </head>
 
     <body class="index" >
-        
-        <div class="ldiv">
-            <?php include('errors.php'); ?><br>
-            <?php include('logerrors.php'); ?><br>
-            <button id="loginbtn" class="modalbtn"> Login Here</button>
-            <button id="regisbtn" class="modalbtn"> Register Here</button>
+
+        <div class="topnav">
+            <img src="pictures/csfBG.png" class="csfBG">
+            <?php include('errors.php'); ?>
+            <?php include('logerrors.php'); ?>
+            <a id="loginbtn" class="modalbtn"> Login</a>
+            <a id="regisbtn" class="modalbtn"> Register</a>
+        </div>
+
+        <div class="container1">  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="pictures/1.jpg">
+            </div>
+
+            <div class="item">
+                <img src="pictures/2.jpg">
+            </div>
+    
+            <div class="item">
+                <img src="pictures/4.jpg">
+            </div>
         </div>
         
         <div class="modal" id="themodal">
@@ -140,6 +161,7 @@
             closebtn2.addEventListener('click', closeModal1);
             window.addEventListener('click', clickOutside);
         </script>
+
         
       
     </body>
