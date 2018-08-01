@@ -8,11 +8,11 @@ body{
     height: 100%;
 }
 
-
 .topnav{
-    height: 15vh;
+    height: auto;
     padding-top: 1.3vh;
-    background-color: #e2e2e2;
+    background-color: transparent;
+    
 }
 
 .csfBG{
