@@ -8,7 +8,14 @@ ADMIN (user_id, type)
 	FK user_id references USERS nulls not allowed
 		Delete restrict, Update cascade
 
-CLIENT (user_id)
-
 FORM (form_id)
 
+QUESTION(form_id, q_id, q_type, question)
+	FK form_id references FORM nulls not allowed
+		Delete restrict, Update cascade
+
+RESPONSE(form_id, q_id, r_id, response)
+	FK form_id references FORM nulls not allowed
+		Delete restrict, Update cascade
+	FK q_id references QUESTION nulls not allowed
+		Delete restrict, Update cascade
