@@ -19,10 +19,10 @@
 
         <div class="topnav">
             <img src="pictures/csfBG.png" class="csfBG">
-            <?php include('errors.php'); ?>
-            <?php include('logerrors.php'); ?>
             <a id="loginbtn" class="modalbtn"> Login</a>
             <a id="regisbtn" class="modalbtn"> Register</a>
+            <?php include('errors.php'); ?>
+            <?php include('logerrors.php'); ?>
         </div>
 
         <div class="container1">  
