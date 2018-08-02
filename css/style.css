@@ -1,7 +1,6 @@
 body{
     font-family: verdana;
     margin: 0;
-    height: 100%;
 }
 
 .index{
@@ -22,8 +21,12 @@ body{
 
 .container1{
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
+}
+
+.slides{
+    display: none;
 }
 
 .item{
@@ -97,8 +100,13 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     overflow: auto;
     vertical-align: middle;
+=======
+    overflow: auto !important;
+    vertical-align: middle;;
+>>>>>>> f07a02ae2ad383cb06c0454b4e6179a5c6318266
     background-color: rgba(0,0,0,0.5);
     top:auto;
 }
