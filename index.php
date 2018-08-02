@@ -15,7 +15,6 @@
     </head>
 
     <body>
-
         <div class="topnav">
             <img src="pictures/csfBG.png" class="csfBG">
             <a id="loginbtn" class="modalbtn"> Login</a>

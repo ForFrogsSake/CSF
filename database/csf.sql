@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2018 at 08:03 AM
+-- Generation Time: Aug 02, 2018 at 08:07 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -25,9 +25,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admin`
 --
--- Creation: Jul 30, 2018 at 07:23 AM
--- Last update: Jul 30, 2018 at 07:23 AM
---
 
 CREATE TABLE `admin` (
   `user_id` int(11) NOT NULL,
@@ -39,9 +36,6 @@ CREATE TABLE `admin` (
 --
 -- Table structure for table `form`
 --
--- Creation: Aug 01, 2018 at 06:22 AM
--- Last update: Aug 01, 2018 at 06:22 AM
---
 
 CREATE TABLE `form` (
   `form_id` int(11) NOT NULL,
@@ -52,9 +46,6 @@ CREATE TABLE `form` (
 
 --
 -- Table structure for table `question`
---
--- Creation: Aug 01, 2018 at 06:08 AM
--- Last update: Aug 01, 2018 at 06:08 AM
 --
 
 CREATE TABLE `question` (
@@ -69,9 +60,6 @@ CREATE TABLE `question` (
 --
 -- Table structure for table `response`
 --
--- Creation: Aug 01, 2018 at 06:09 AM
--- Last update: Aug 01, 2018 at 06:09 AM
---
 
 CREATE TABLE `response` (
   `form_id` int(11) NOT NULL,
@@ -85,9 +73,6 @@ CREATE TABLE `response` (
 --
 -- Table structure for table `users`
 --
--- Creation: Jul 30, 2018 at 07:58 AM
--- Last update: Jul 30, 2018 at 07:58 AM
---
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
@@ -96,8 +81,8 @@ CREATE TABLE `users` (
   `email` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
-  `status` varchar(45) NOT NULL,
-  `user_type` varchar(45) NOT NULL
+  `status` varchar(5) NOT NULL DEFAULT '1',
+  `user_type` varchar(45) DEFAULT 'user'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -105,7 +90,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `fname`, `lname`, `email`, `username`, `password`, `status`, `user_type`) VALUES
-(3, 'Nicole', 'Marinas', 'nikkifortea19@gmail.com', 'Nikki', 'd1c47b5da0b00db8e1096ed1826ebcfa', '', '');
+(3, 'Nicole', 'Marinas', 'nikkifortea19@gmail.com', 'Nikki', 'd1c47b5da0b00db8e1096ed1826ebcfa', '', ''),
+(4, '2132rwewf', 'f4rt34tr', 'fsdg34@gmail.com', 'ewerwet', '25d55ad283aa400af464c76d713c07ad', '1', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -153,7 +139,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

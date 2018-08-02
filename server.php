@@ -72,8 +72,9 @@ if (isset($_POST['register'])){
         if($count != 1) {
 			if($psw1==$psw2){
 				$password = md5($psw1);
-				$sql = "INSERT INTO users (fname, lname, email, username, password) VALUES ('$firstname', '$lastname', '$email', '$username', '$password')";
-				mysqli_query($conn,$sql);
+				$sql = "INSERT INTO users (fname, lname, email, username, password) 
+						VALUES ('$firstname', '$lastname', '$email', '$username', '$password')";
+				mysqli_query($conn, $sql) or die($mysqli_error($conn));
 				header("Location: index.php?signup=success");
 				exit;
 			} else if($psw1!=$psw2) {
