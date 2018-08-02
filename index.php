@@ -26,21 +26,14 @@
         </div>
 
         <div class="container1">  
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
-
-            <div class="item active">
-                <img src="pictures/1.jpg">
-            </div>
-
-            <div class="item">
-                <img src="pictures/2.jpg">
-            </div>
-    
-            <div class="item">
-                <img src="pictures/4.jpg">
-            </div>
+           
+                <img class="slides" src="pictures/1.jpg" style="width:100%">
+            
+                <img class="slides" src="pictures/2.jpg" style="width:100%">
+            
+                <img class="slides"  src="pictures/4.jpg" style="width:100%">
+           
         </div>
         
         <div class="modal" id="themodal">
@@ -160,6 +153,23 @@
             closebtn1.addEventListener('click', closeModal);
             closebtn2.addEventListener('click', closeModal1);
             window.addEventListener('click', clickOutside);
+            
+            
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+
         </script>
 
         
