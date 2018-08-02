@@ -17,8 +17,10 @@
     <head>
         <title>Create a CSF Form</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link type="image/png" rel="icon" href="pictures/DOST LOGO.png">
+        <link type="image/png" rel="icon" href="pictures/logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     </head>
 
     <body class="home">
@@ -44,13 +46,18 @@
             </div>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
        </div>   
-            
-        <div class="content">
-  
-</div>
-        <div class="homebody">
-            
-        </div>
+
+       <form method="POST">
+       <div id="csfcontainer">
+
+       Form Number: <input type="number" name="formNumber" min="1" id="formNumber" />
+       Form Title: <input type="text" name="formTitle" id="formTitle" />
+       Question: <input type="text" name="question" id="question" />
+       <a href="#" id="addMore">Add More</a>
+       </div>
+
+       <input type="submit" name="submit" />
+       </form>
         
         <script>
         function myFunction() {
@@ -61,6 +68,21 @@
                 x.className = "navbar";
             }
         }
+        </script>
+
+        <script>
+        $(document).ready(function(e) {
+            //Variables
+            var html= '';
+            //Add Rows
+            $("#addMore").click(function(e){
+                $("#csfcontainer").append($());
+            });
+
+            //Remove Rows
+
+            //Populate Rows(di kailangan actually)
+        });
         </script>
         
 
