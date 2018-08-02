@@ -3,10 +3,6 @@ body{
     margin: 0;
 }
 
-.index{
-    height: 100%;
-}
-
 .topnav{
     height: auto;
     padding-top: 1.3vh;
@@ -74,6 +70,7 @@ body{
     border: 0;
     background: color #e2e2e2;
     font-size: 2.8vh;
+    color:#0080ff;
     padding: 2vh;
     margin: 2vh;
     text-align: center;
@@ -90,49 +87,30 @@ body{
     cursor: pointer;
 }
 
-
-    
 .modal{
     display:none;
-    position: fixed;
+    position:fixed ;
     z-index:1;
     left:0;
     top: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     overflow: auto;
-    vertical-align: middle;
-=======
-    overflow: auto !important;
     vertical-align: middle;;
->>>>>>> f07a02ae2ad383cb06c0454b4e6179a5c6318266
     background-color: rgba(0,0,0,0.5);
-    top:auto;
 }
 
 .modal-content{
     background-color: gainsboro;
-    border-radius: 35px;
+    border-radius: 25px;
     margin: 5% auto;
-    padding:20px;
+    padding:30px;
     border: 1px solid #888;
     width: 70%;
+    height: auto;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalopen;
     animation-duration: 1s;
-}
-    
-.error{
-    width: 70%;
-    margin: 0px auto;
-    padding: 10px;
-    border: 1px solid #a94442;
-    color: #a94442;
-    background-color: #f2dede;
-    border-radius: 5px;
-    text-align: left;
-    margin-bottom: 10px;
 }
 
 .close{
@@ -144,8 +122,9 @@ body{
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: red !important;
     text-decoration: none;
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -163,7 +142,18 @@ body{
     margin-left: auto;
     margin-right: auto;
     height: auto;
-   
+}
+
+.error{
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background-color: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .loginfooter {
@@ -194,7 +184,7 @@ img.circle{
 }
 
 input[name=username], input[name=uname],input[name=logpassword], input[name=password],input[name=email], input[name=repassword], input[name=fname], input[name=lname]{
-    width: 100%;
+    width: 100% !important;
     padding: 15px;
     font-size: 18px;
     margin-bottom: 2%;

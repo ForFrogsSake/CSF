@@ -9,13 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
   		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link type="image/png" rel="icon" href="pictures/DOST LOGO.png">
 
         
     </head>
 
-    <body class="index" >
+    <body>
 
         <div class="topnav">
             <img src="pictures/csfBG.png" class="csfBG">
@@ -53,7 +52,7 @@
                         <label>
                         Password: 
                                 <input type="password" name="logpassword" placeholder="Enter password" required>
-                        </label>
+                        </label><br>
                         <label>
                             <input type="checkbox" name="remember"> Remember me
                         </label><br>
